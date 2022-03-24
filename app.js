@@ -4,9 +4,9 @@ const path = require('path');
 
 app.use('/', express.static(__dirname + '/public'));
 
-app.listen(3005, ()=>{
-    console.log('Servidor funcionando');
-});
+app.listen(process.env.PORT || 3005, function () {
+        console.log('Servidor funcionando');
+    });
 
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, './views/index.html'));
