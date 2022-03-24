@@ -1,0 +1,48 @@
+form {
+  width: 100%;
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2%;
+  background-color: rgb(238, 238, 238);
+}
+
+form h1 {
+  margin: 15px;
+  align-items: flex-start;
+}
+form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #1259c3;
+  cursor: pointer;
+}
+.redondeado {
+  width: 85%;
+  height: 40px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  background-color: rgb(252, 252, 252);
+}
+
+.buttom {
+  width: 85%;
+  height: 40px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #0044aa;
+}
+.buttom:hover {
+  background-color: #0022aa;
+}
+/* ---------- Media Queries ---------- */
+@media (min-width: 769px) {
+  form {
+    max-width: 50vw;
+  }
+}
