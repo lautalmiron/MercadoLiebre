@@ -6,7 +6,8 @@ form {
   flex-direction: column;
   align-items: center;
   border-radius: 2%;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(226, 226, 226);
+  box-shadow: gray;
 }
 
 form h1 {
@@ -39,6 +40,10 @@ form button {
 }
 .buttom:hover {
   background-color: #0022aa;
+}
+input[type="text"] {
+  color: rgb(87, 87, 87);
+  padding-left: .04em;
 }
 /* ---------- Media Queries ---------- */
 @media (min-width: 769px) {

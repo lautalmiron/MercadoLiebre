@@ -6,7 +6,8 @@ form {
   flex-direction: column;
   align-items: center;
   border-radius: 2%;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(226, 226, 226);
+  box-shadow: gray;
 }
 
 form h1 {
@@ -60,6 +61,12 @@ input[type="date"] {
   border-radius: 5px;
   color: white;
   background-color: #0044aa;
+}
+.buttom:hover {
+  background-color: #0022aa;
+}
+.bottom:hover {
+  background-color: #0022aa;
 }
 .userprofile {
   padding: 5px;

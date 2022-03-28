@@ -7,7 +7,8 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
 }
 p {
   font-size: 12px;
@@ -84,6 +85,12 @@ li {
   text-decoration: none;
   list-style: none;
 }
+
+nav ul li :hover {
+  border-radius: 2em;
+  padding: 0.1em;
+  background-color: #ddbd1f;
+}
 a {
   text-decoration: none;
   color: black;
@@ -143,7 +150,7 @@ section {
   color: #39b54a;
 }
 
-/*Verlo despues*/
+/*Verlo despues
 .envio {
   display: flex;
   position: relative;
@@ -157,7 +164,7 @@ section {
   border-radius: 50%;
   top: 0px;
   right: -800vw;
-}
+}*/
 
 .descripcion {
   display: none;
