@@ -29,8 +29,8 @@ form button {
   outline: none;
   background-color: rgb(252, 252, 252);
 }
-input[type]
 .buttom {
+  border: 0px;
   width: 85%;
   height: 40px;
   margin: 0.5rem;

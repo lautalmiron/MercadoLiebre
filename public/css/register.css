@@ -57,6 +57,10 @@ form button {
   color: white;
   background-color: #0044aa;
 }
+p.register {
+  font-size: 16px;
+  color: white;
+}
 .buttom:hover {
   background-color: #0022aa;
 }
