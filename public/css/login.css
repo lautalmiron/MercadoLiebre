@@ -29,7 +29,7 @@ form button {
   outline: none;
   background-color: rgb(252, 252, 252);
 }
-
+input[type]
 .buttom {
   width: 85%;
   height: 40px;
@@ -40,10 +40,6 @@ form button {
 }
 .buttom:hover {
   background-color: #0022aa;
-}
-input[type="text"] {
-  color: rgb(87, 87, 87);
-  padding-left: .04em;
 }
 /* ---------- Media Queries ---------- */
 @media (min-width: 769px) {

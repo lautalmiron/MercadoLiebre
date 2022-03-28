@@ -17,6 +17,12 @@ h1 {
   color: #666;
   font-size: 24px;
 }
+input[type="date"],
+input[type="text"],
+input[type="password"] {
+  color: gray;
+  padding-left: 5px;
+}
 
 /* ---------- HEADER ---------- */
 
@@ -57,9 +63,7 @@ header {
   border-radius: 4px;
   border: 1px solid #b7cadf;
 }
-::placeholder {
-  padding: 1vw;
-}
+
 .superior {
   display: flex;
   flex-grow: 1;
@@ -125,7 +129,6 @@ section {
   justify-content: center;
 }
 .publicacion {
-  box-shadow: #666;
   border-radius: 0.4em;
   background-color: #ffffff;
   margin-bottom: 10px;
@@ -137,20 +140,20 @@ section {
   display: block;
 }
 .publicacionHijo {
+  padding-left: 10px;
+  padding-bottom: 10px;
   display: flex;
   border-top: solid 1px#ebebeb;
-  padding: 15px;
+  padding-top: 10px;
 }
 .precio {
-  width: 30%;
-  font-size: 18px;
+  right: 0%;
 }
 .descuento {
-  width: 70%;
+  right: 0%;
   color: #39b54a;
 }
 
-/*Verlo despues
 .envio {
   display: flex;
   position: relative;
@@ -162,13 +165,18 @@ section {
   border: 1px solid #39b54a;
   background-color: #fff;
   border-radius: 50%;
-  top: 0px;
-  right: -800vw;
-}*/
-
+  top: 15px;
+  right: -80%;
+}
+.envio :hover {
+  transition: 1s;
+  transform: rotateZ(-90deg);
+}
 .descripcion {
-  display: none;
-  color: #666;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: rgb(59, 59, 59);
+  visibility: hidden;
 }
 
 /* ---------- FOOTER ---------- */
@@ -227,13 +235,18 @@ footer.h1 {
     display: flex;
     flex-wrap: wrap;
   }
-  .descripcion {
-    display: block;
-  }
   .publicacion {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 30vw;
     margin: 2em;
+    box-shadow: 0px 0px 10px rgb(196, 195, 195);
+  }
+  .publicacion:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .publicacion p {
+    visibility: visible;
+    font-weight: bold;
   }
 }
 /* ---- DESKTOP ----- */
@@ -280,12 +293,13 @@ footer.h1 {
   }
 
   .publicacion {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     display: block;
   }
+
   .publicacion img {
     width: 17vw;
   }
+
   /* --- FOOTER --- */
   .contenedorPadre {
     display: flex;

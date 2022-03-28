@@ -35,13 +35,7 @@ form button {
   display: flex;
   flex-direction: row;
 }
-::placeholder {
-  padding: 1vw;
-}
-input[type="date"] {
-  color: gray;
-  padding: 1vw;
-}
+
 .intereses {
   display: flex;
   flex-direction: column;
@@ -53,6 +47,7 @@ input[type="date"] {
   margin: 0.8em;
   padding-left: 34px;
 }
+
 .bottom {
   border: 0px;
   width: 85%;
