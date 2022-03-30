@@ -249,11 +249,7 @@ footer.h1 {
     box-shadow: 0px 0px 10px rgb(196, 195, 195);
   }
   .publicacion:hover {
-    transition: 0.5s;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-  .publicacion p {
-    visibility: visible;
   }
 }
 /* ---- DESKTOP ----- */
@@ -286,6 +282,11 @@ footer.h1 {
     width: 33vw;
     max-width: 600px;
     text-align: right;
+  }
+
+  .publicacion:hover .descripcion {
+    transition: 10s;
+    visibility: visible;
   }
   /* --- BODY--- */
   section {
